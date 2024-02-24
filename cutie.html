@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever with You</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff66b2;
+            padding: 20px;
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #ff66b2;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e051a3;
+        }
+
+        #noOption {
+            transition: transform 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Forever with You</h1>
+    </header>
+
+    <section id="question">
+        <h2>Paridhee, will you be with me forever?</h2>
+        <button id="yesOption" onclick="alert('I love you so much')">Yes</button>
+        <button id="noOption" onclick="moveNoOption()">No</button>
+    </section>
+
+    <footer>
+        <p>Created with love by Aditya :) </p>
+    </footer>
+
+    <script>
+        function moveNoOption() {
+            const noOption = document.getElementById('noOption');
+            noOption.style.transform = 'translateX(-2000px)';
+        }
+    </script>
+</body>
+
+</html>
